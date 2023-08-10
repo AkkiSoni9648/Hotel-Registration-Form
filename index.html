@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	    <meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="author" content="Akash soni">
+        <meta name="description" content="Simple web page that Register the valid information of customer">
+
+        <meta property="og:title" content="Hotel Akash">
+        <meta property="og:type" content="website">
+        <link rel="icon" href="Hotell.jpg" type="image/icon-x">
+        <title>Registration Form By AKASH</title>
+	</head>
+	<body>
+	<div class="container">
+        
+		<div class="data_container" id="blur">
+            <div class="bgcontainer">
+                <div class="msg">
+                    <p></p>
+                    <p id="hotel_name">Welcome Hotel AKASH</p>
+                </div>
+            </div>
+            <div class="customer_info">
+                <div class="customer_content">
+                    <form class="reg-form" action="#" method="post" seamless="yes" id="reg_form">
+                        <h3>Customer Information</h3>
+                        <div class="text_field">
+                            <input type="text" name="customer_name" required>
+                            <span></span>
+                            <label>Name</label>
+                        </div>
+                        <div class="text_field">
+                            <input type="text" name="check_in_date" onfocus="this.type='date'" onfocusout="this.type='text'" required>
+                            <span></span>
+                            <label>Check-in Date</label>
+                        </div>
+                        <div class="text_field">
+                            <input type="number" name="number_of_days" id="number" required>
+                            <span></span>
+                            <label>Total No.Of Days</label>
+                        </div>
+                        <div class="text_field">
+                            <input type="number" name="number_of_persons" id="number" required>
+                            <span></span>
+                            <label>Total No.Of Persons</label>
+                        </div>
+                   
+                    <h3>Types of Rooms</h3>
+                    <div calss="room_options">
+                        Type:<br/>
+                        <div class="rooms_type">
+                            <div class="delux">
+                                <img src="delux.jfif" width="100px" height="100px" style="border-radius:5px;"><br/>
+                                <input type="radio" name="room_type" value="Delux" required>Delux - 2500/-
+                            </div>
+                            <div class="suite">
+                                <img src="suite.jfif" width="100px" height="100px" style="border-radius:5px;"><br/>
+                                <input type="radio" name="room_type" value="Suite" >Suite - 4000/-
+                            </div>
+                        </div>
+                        Amenities:<br/>
+                        <div class="amenities">
+                            <div class="ac">
+                                <img src="ac.jfif" width="100px" height="100px" style="border-radius:5px;"><br/>
+                                <input type="checkbox" name="amenities" value="AC" required>AC - 1000/-
+                            </div>
+                            <div class="locker">
+                                <img src="locker.jfif" width="100px" height="100px" style="border-radius:5px;"><br/>
+                                <input type="checkbox" name="amenities" value="Locker">Locker - 300/-
+                            </div>
+                        </div>
+                        <h3>Advanced Payment</h3>
+                        <div class="text_field">
+                            <input type="number" name="advance_amount" id="number" required>
+                            <span></span>
+                            <label>Advance Amount</label>
+                        </div>
+                    </div>
+                    <center><a id="register" href="#">REGISTER</a></center>    
+                    </form>
+                </div>
+            </div>
+		</div>
+	</div>
+    <div id="popup">
+        <button id="close" >&times;</button>
+        <h2>Registered Details</h2>
+        <div class="registered_data">
+            <p>Customer Name : <span id="customers_name"></span></p>
+            <p>Check In Date : <span id="check_in_date"></span></p>
+            <p>Total No of Days : <span id="no_of_days"></span></p>
+            <p>Total No of Persons : <span id="no_of_persons"></span></p>
+            <p>Room Type : <span id="room_type"></span></p>
+            <p>Amenities : <span id="amenities"></span></p>
+            <p>Advance Amount : <span id="advance_amount"></span></p>
+            <p>Total Amount : <span id="total_amount"></span></p>
+            <p>Balance Amount : <span id="balance_amount"></span></p>
+        </div>
+    </div>
+    <script src="script.js"></script></br>
+	</body>
+</html>
